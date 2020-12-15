@@ -8,8 +8,8 @@ from picamera import PiCamera
 from PIL import Image
 from tflite_runtime.interpreter import Interpreter
 
-MAX_WIDTH = 640
-MAX_HEIGHT= 480
+MAX_WIDTH = 1920
+MAX_HEIGHT= 1080
 
 DEFAULT_MODEL_PATH = "models/mobilenet_ssd_v2_object_detect/detect.tflite"
 DEFAULT_LABEL_PATH = "models/mobilenet_ssd_v2_object_detect/coco_labels.txt"

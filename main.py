@@ -17,8 +17,8 @@ def main():
     sub_process.start() 
 
     while True: 
-	GOOD_VIDEOS = json.loads(requests.get(VIDEO_URLS_URL).text)
-        video = pafy.new(random.choice(GOOD_VIDEOS))
+        video_urls= json.loads(requests.get(VIDEO_URLS_URL).text)
+        video = pafy.new(random.choice(video_urls))
 
         best = video.getbest()
         media = vlc.MediaPlayer(best.url)
