@@ -96,7 +96,7 @@ def human_detector():
                 for result in results:
                     if result["class"] == "person": 
                         c.camera.start_preview()
-                        time.sleep(3)
+                        time.sleep(10)
                         c.camera.stop_preview()
                 stream.seek(0)
                 stream.truncate()
