@@ -3,15 +3,21 @@ import pafy
 import time
 import random
 import multiprocessing as mp
+import json
+
+import requests
 
 import detector
-from video_urls import GOOD_VIDEOS
+
+VIDEO_URLS_URL = "https://raw.githubusercontent.com/Snarik/LabPeephole/main/video_urls.json"
+
 def main():
     
     sub_process = mp.Process(target=detector.human_detector)
     sub_process.start() 
 
     while True: 
+	GOOD_VIDEOS = json.loads(requests.get(VIDEO_URLS_URL).text)
         video = pafy.new(random.choice(GOOD_VIDEOS))
 
         best = video.getbest()

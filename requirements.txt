@@ -1,0 +1,26 @@
+backcall==0.2.0
+certifi==2020.12.5
+chardet==3.0.4
+decorator==4.4.2
+idna==2.10
+ipython==7.19.0
+ipython-genutils==0.2.0
+jedi==0.17.2
+numpy==1.19.4
+pafy==0.5.5
+parso==0.7.1
+pexpect==4.8.0
+picamera==1.13
+pickleshare==0.7.5
+Pillow==8.0.1
+pkg-resources==0.0.0
+prompt-toolkit==3.0.8
+ptyprocess==0.6.0
+Pygments==2.7.2
+python-vlc==3.0.11115
+requests==2.25.0
+tflite-runtime @ https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp37-cp37m-linux_armv7l.whl
+traitlets==5.0.5
+urllib3==1.26.2
+wcwidth==0.2.5
+youtube-dl==2020.12.2
